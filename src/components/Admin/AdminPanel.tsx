@@ -8,6 +8,7 @@ import { Batches } from './Batches';
 import { Students } from './Students';
 import { Staff } from './Staff';
 import { Attendance } from './Attendance';
+import { Payments } from './Payments';
 
 export function AdminPanel() {
   const { user, loading } = useAuth();
@@ -51,6 +52,8 @@ export function AdminPanel() {
         return <Staff />;
       case 'attendance':
         return <Attendance />;
+      case 'payments':
+        return <Payments />;
       default:
         return <Dashboard />;
     }

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
-import { LayoutDashboard, MapPin, Users, GraduationCap, CircleUser as UserCircle, ClipboardCheck, LogOut, Menu, X } from 'lucide-react';
+import { LayoutDashboard, MapPin, Users, GraduationCap, CircleUser as UserCircle, ClipboardCheck, DollarSign, LogOut, Menu, X } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -19,6 +19,7 @@ export function Layout({ children, currentPage, onNavigate }: LayoutProps) {
     { id: 'students', label: 'Students', icon: GraduationCap },
     { id: 'staff', label: 'Staff', icon: UserCircle },
     { id: 'attendance', label: 'Attendance', icon: ClipboardCheck },
+    { id: 'payments', label: 'Payments', icon: DollarSign },
   ];
 
   return (
